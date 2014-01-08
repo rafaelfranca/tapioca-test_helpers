@@ -2,12 +2,6 @@ require 'test_helper'
 
 class DisableAnimationsTest < MiniTest::Unit::TestCase
   def test_disable_animations_generates_javascript_tag
-    helper_class = Class.new do
-      include Tapioca::TestHelpers
-    end
-
-    helper = helper_class.new
-
     expected_result = <<-JAVASCRIPT
 <script>
 //<![CDATA[
@@ -24,6 +18,6 @@ class DisableAnimationsTest < MiniTest::Unit::TestCase
 </script>
 JAVASCRIPT
 
-    assert_equal expected_result.chop, helper.disable_animations
+    assert_equal expected_result.chop, Tapioca::TestHelpers.disable_animations
   end
 end
