@@ -1,9 +1,13 @@
 require "tapioca/test_helpers/version"
 require "action_view"
+require "action_view/helpers"
 require "action_view/helpers/javascript_helper"
 
 module Tapioca
   module TestHelpers
+    include ActionView::Helpers::TagHelper
+    include ActionView::Helpers::JavaScriptHelper
+
     # Public: generates javascript code to disable all animations so that tests
     # won't timeout waiting for animations to run.
     #
