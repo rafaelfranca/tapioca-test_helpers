@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Tapioca::TestHelpers::VERSION
   spec.authors       = ["Rafael Mendonça França", "Carlos Antonio da Silva"]
   spec.email         = ["opensource@plataformatec.com.br"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{A set of test helper to be used in Rails applications}
+  spec.description   = %q{Test helpers for Rails applications}
+  spec.homepage      = "https://github.com/rafaelfranca/tapioca-test_helpers"
   spec.license       = "Apache 2.0"
 
   spec.files         = `git ls-files`.split($/)

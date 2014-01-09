@@ -1,6 +1,6 @@
 # Tapioca::TestHelpers
 
-A set of test helper to be used in Rails applications
+A set of test helper to be used in Rails applications.
 
 ## Installation
 
