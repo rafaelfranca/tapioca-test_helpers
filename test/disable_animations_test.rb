@@ -6,6 +6,7 @@ class DisableAnimationsTest < MiniTest::Unit::TestCase
 <script>
 //<![CDATA[
         $.fx.off = true;
+        $.fn.affix = $.noop;
         $.support.transition = false;
 
         var disableBootstrapTransitions = function() {
