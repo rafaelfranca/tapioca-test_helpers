@@ -18,6 +18,7 @@ module Tapioca
     def self.disable_animations
       javascript_tag <<-JAVASCRIPT
         $.fx.off = true;
+        $.fn.affix = $.noop;
         $.support.transition = false;
 
         var disableBootstrapTransitions = function() {
